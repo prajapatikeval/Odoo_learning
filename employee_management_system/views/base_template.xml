@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+    
+        <template id="base_creation_form" name="Base Creation Form">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="image" widget="image" options='{"size":[300,180]}'/>
+                    </group>
+                    <group name="first_group">
+                        <field name="name" />
+                        <field name="age" />
+                        <field name="email" />
+                        <field name="gender" />
+                        <field name="date_of_birth" />
+                    </group>
+                    <group name="second_group">
+                        <field name="start_date" />
+                        <field name="department_id" />
+                        <field name="is_manager" />
+                        <field name="address" />
+                        <field name="created_at" />
+                        <field name="notes" />
+                    </group>
+                </sheet>
+            </form>
+        </template>
+    
+        <template id="base_tree_view" name="Base Tree View">
+            <tree>
+                <field name="image" widget="image" options='{"size":[90,70]}'/>
+                <field name="name" />
+                <field name="age" />
+                <field name="gender" />
+                <field name="date_of_birth" />
+                <field name="start_date" />
+                <field name="department_id" />
+                <field name="is_manager" />
+                <field name="address" />
+                <field name="created_at" />
+                <field name="notes" />
+            </tree>
+        </template>
+    
+    </data>
+    
+
+</odoo>

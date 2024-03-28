@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+        
+        <!-- Root -->
+        <menuitem
+            id="employee_root_menu"
+            name="Employee Management"
+            sequence="10"/>
+
+        <!-- Dashboard -->
+        <menuitem 
+            id = "employee_dashboard"
+            name = "Dashboard"
+            parent="employee_root_menu"
+            action="bsi_dashboard_action"
+            sequence="20"/>
+
+        <!-- Manager Section -->
+        <menuitem
+            id="Manager"
+            name="Manager"
+            parent="employee_root_menu"
+            sequence="20"/>
+
+        <!-- Inner Manager Section -->
+        <menuitem
+            id="manager_detail_page"
+            action="bsi_manager_detail_form"
+            name="Manager Details"
+            parent="Manager"
+            sequence="30"/>
+
+        <!-- Client Section -->
+        <menuitem
+            id="Client"
+            name="Client"
+            parent="employee_root_menu"
+            sequence="20"/>
+
+        <!-- Inner Client Section -->
+        <menuitem
+            id="client_detail_page"
+            action="bsi_client_detail_action"
+            name="Client Details"
+            parent="Client"
+            sequence="30"/>
+
+        <!-- Employee Section -->
+        <menuitem
+            id="Employee"
+            name="Employee"
+            parent="employee_root_menu"
+            sequence="20"/>
+
+        <!-- Inner Employee Section -->
+        <menuitem
+            id="employee_detail_page"
+            action="bsi_employee_detail_action"
+            name="Employee Details"
+            parent="Employee"
+            sequence="30"/>
+
+
+        <!-- Project Section -->
+        <menuitem
+            id="Project"
+            action="bsi_project_detail_action"
+            name="Project"
+            parent="employee_root_menu"
+            sequence="20"/>
+    
+    </data>
+    
+
+</odoo>

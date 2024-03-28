@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+        <record id="bsi_dashboard" model="ir.ui.view">
+            <field name="name">project.view.kanban</field>
+            <field name="model">ir.ui.view</field>
+            <field name="arch" type="xml">
+                <kanban create="false">
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_content">
+                                <div class="oe_kanban_card">
+                                    <div class="oe_kanban_card_content">
+                                        hello
+                                    </div>
+                                </div>
+                            </div> 
+                        </t>
+                    </templates>
+                    <field name="name">Hello Kanban</field>
+                    <columns>
+                        <field name="name">Hello Column</field>
+                        <kanban>
+                            <t t-call="kanban_box"/>
+                        </kanban>
+                    </columns>
+                </kanban>
+            </field>
+        </record>
+        
+        <record id="bsi_dashboard_action" model="ir.actions.act_window">
+            <field name="name">Dashboard</field>
+            <field name="res_model">ir.ui.view</field>
+            <field name="view_mode">kanban</field>
+            <field name="view_id" ref="bsi_dashboard"/>
+        </record>
+
+    </data>
+    
+
+</odoo>

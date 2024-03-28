@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+employee_management_system.access_employee_name,access_employee_name,employee_management_system.model_employee_name,base.group_user,1,1,1,1
+employee_management_system.access_client_name,access_client_name,employee_management_system.model_client_name,base.group_user,1,1,1,1
+employee_management_system.access_manager_name,access_manager_name,employee_management_system.model_manager_name,base.group_user,1,1,1,1
+employee_management_system.access_project,access_project,employee_management_system.model_project,base.group_user,1,1,1,1
